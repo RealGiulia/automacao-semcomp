@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Banco - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="informacoes" class="card">
+        <div id="bloquinho">
+            <h3>Saldo</h3>
+            <p>R$ 4500,00</p>
+        </div>
+        <div id="bloquinho">
+            <h3>Limite:</h3>
+            <p>R$ 5612,00</p>
+        </div>
+        <div id="bloquinho">
+            <h3>Fatura:</h3>
+            <p>R$ 349,12</p>
+        </div>
+    </div>
+
+    <div id="extrato" class="card">
+        <h2>Extrato</h2>
+        <div id="seletor">
+            <label for="periodo">Período</label>
+            <select name="periodo" id="periodo">
+                <option value="mes-atual">Mês atual</option>
+                <option value="seis-meses">Ultimos seis meses</option>
+                <option value="ano-atual">Ultimo ano</option>
+                <option value="total">Todas transacoes</option>
+            </select>
+        </div>
+
+        <table id="tabela-extrato">
+
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
