@@ -73,7 +73,7 @@ for linha in linhas:
 
 # Inserindo os dados da tabela no arquivo csv
 data = pd.DataFrame(conteudo_linhas)
-data_csv = data.to_csv('transacoes.csv',columns=cols,index=False)
+data_csv = data.to_csv('transacoes.csv',header=cols,index=False)
 
 # Fechando o driver
 driver.quit()
